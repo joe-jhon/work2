@@ -44,6 +44,9 @@ header a::after {
     transform-origin: left top;
     transition: transform .3s;
 }
+header .header-innner .logo::after, header .header-innner .linebutton::after,{
+    display:none
+}
   header a:hover::after {
     transform: scale(1, 1);
 }
