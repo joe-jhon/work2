@@ -95,7 +95,7 @@ header .lineicon{
 /*-------------------js-------------------------*/
 
 .mainvisual .background{
-    background-image:url(images/top-image.png);
+    background-image:url(https://github.com/joe-jhon/work2/blob/main/top-image.png?raw=true);
     background-repeat: no-repeat;
     width: 100%;
     height:62.8vw;
@@ -134,7 +134,7 @@ header .lineicon{
     position: relative;
 }
 .about .background{
-    background-image:url(images/exterior_boke.png);
+    background-image:url(https://github.com/joe-jhon/work2/blob/main/exterior_boke.png?raw=true);
     background-attachment: fixed;
     background-position: center;
     background-size: 100% auto;
@@ -215,7 +215,7 @@ header .lineicon{
 }
 
 .food .food-title{
-    background-image:url(images/grdation_white.png);
+    background-image:url(https://github.com/joe-jhon/work2/blob/main/grdation_white.png?raw=true);
     background-repeat: no-repeat;
     aspect-ratio: 1360/400;
     display: flex;
@@ -338,7 +338,7 @@ header .lineicon{
 
 
 .beer .beer-title{
-    background-image:url(images/grdation_white.png);
+    background-image:url(https://github.com/joe-jhon/work2/blob/main/grdation_white.png?raw=true);
     background-repeat: no-repeat;
     transform: rotate(180deg);
     aspect-ratio: 1360/400;
@@ -542,7 +542,7 @@ footer .textbox .line{
 }
 @media screen and (max-width: 960px) {
     .mainvisual .background{
-        background-image: url(images/top-image-sp.png);
+        background-image: url(https://github.com/joe-jhon/work2/blob/main/top-image-sp.png?raw=true);
         background-size: auto 100%;
         background-position: left;
         width: 90%;
