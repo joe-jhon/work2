@@ -1,0 +1,307 @@
+html, body, div, span, applet, object, iframe, h1, h2, h3, h4, h5, h6, p, blockquote, pre, a, abbr, acronym, address, big, cite, code, del, dfn, em, img, ins, kbd, q, s, samp, small, strike, strong, sub, sup, tt, var, b, u, i, center, dl, dt, dd, ol, ul, li, fieldset, form, label, legend, table, caption, tbody, tfoot, thead, tr, th, td, article, aside, canvas, details, embed, figure, figcaption, footer, header, hgroup, menu, nav, output, ruby, section, summary, time, mark, audio, video {
+    margin: 0;
+    padding: 0;
+    border: 0;
+    font-size: 100%;
+    font-weight: 500;
+    margin-bottom: 0;
+    line-height: 1.2;
+}
+
+html{font-size: 10px;}
+
+#wrapper {
+    font-family:Anago,Ryo Gothic PlusN EL,Ryo Gothic PlusN L,Ryo Gothic PlusN B,Arial,Hiragino Kaku Gothic ProN,Hiragino Sans,Meiryosans-serif;
+    background-color: #FFFFFF;
+    max-width: 100%;
+    overflow:hidden;
+    background-color: rgba(239,239,239,0.0);
+}
+
+header{
+    width:100vw;
+    height: 105px;
+    position: fixed;
+    z-index: 10;
+}
+header a{
+    font-size:1.8rem;
+    text-decoration: none;
+    color: #000000;
+    margin-left: 7vw;
+    position: relative;
+    display: inline-block;
+}
+header a::after {
+    position: absolute;
+    bottom: -4px;
+    left: -30%;
+    content: '';
+    width: 160%;
+    height: 1px;
+    background: #000;
+    transform: scale(0, 1);
+    transform-origin: left top;
+    transition: transform .3s;
+}
+  header a:hover::after {
+    transform: scale(1, 1);
+}
+
+.header-inner{
+    display:flex;
+    justify-content: space-between;
+    align-items: center;
+    padding:26.5px 3% 26.5px 3%;
+}
+header .menubar{
+    display: flex;
+    align-items: center;
+}
+header .fishlogo{
+    width:100px;
+}
+header .lineicon{
+    width:29px;
+}
+
+main{
+    margin-bottom: 300px;
+}
+main .bar{
+    width:100%;
+    aspect-ratio: 1360/400;
+    margin-top: 106.87px;
+}
+main .title{
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    position: absolute;
+    top: 195px;
+    left: 10%;
+}
+main .title .text{
+    font-family: Anago;
+    font-size: 2rem;
+}
+main .title .border-line{
+    border-top: 0.5px black;
+    width: 28px;
+    height: 0.5px;
+    background-color: #000;
+}
+main .exterior{
+    width:42.5%;
+    margin-top: -16%;
+    margin-left: -13%;
+}
+
+
+main .textbox {
+    position: absolute;
+    top: 195px;
+    left: 40%;
+
+}
+
+
+main .textbox p{
+    font-family: Ryo Gothic PlusN EL;
+    text-decoration: none;
+}
+main  .textbox .shopname{
+    font-size: 2.3rem;
+    letter-spacing: 2.1px;
+    margin-bottom: 60px;
+}
+main .textbox .shopname span{
+    font-family: Anago;
+    font-size: 4.6rem;
+}
+main .textbox .adress, .businesshours{
+    display: flex;
+}
+main .textbox .adress{
+    margin-bottom: 50px; 
+}
+main .textbox .businesshours{
+    margin-bottom: 95px; 
+}
+main .textbox .a{
+    width: 100px;
+}
+main .textbox .adress p{
+    line-height: 25px;
+}
+main .textbox .adress a{
+    padding-bottom: 5px;
+    text-decoration: none;
+    color: #000;
+    border-bottom: solid 1px;
+    transition: all 0.7s;
+    position: relative;
+    display: inline-block;
+}
+main .textbox .adress a::after {
+    position: absolute;
+    bottom: -1px;
+    left: 0;
+    content: '';
+    width: 100%;
+    height: 1px;
+    background: #e7a303;
+    transform: scale(0, 1);
+    transform-origin: left top;
+    transition: transform .3s;
+  }
+  main .textbox .adress a:hover::after {
+    transform: scale(1, 1);
+  }
+
+
+
+
+main .textbox .adress, .businesshours, .line-text{
+    font-size: 1.5rem;
+    letter-spacing: 2.3px;
+}
+
+main .textbox .line-text{
+    margin-bottom: 25px;   
+}
+main .textbox .lineicon{
+    width: 19px;
+    height: 19px;
+    margin-right: 8px;
+}
+main .textbox .linebotton{
+    width: 197px;
+    height: 52px;
+    border: 1.1px solid #000;
+    border-radius: 11px;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    transition: 0.2s;
+}
+main .textbox .linebotton:hover{
+    border: 1.1px solid rgb(13, 249, 49);
+    background-color: rgb(242, 242, 242);
+}
+main .textbox .line{
+    text-decoration-line: none;
+    color: #000;
+    font-size: 1.6rem;
+    letter-spacing: 2px;
+}
+
+footer{
+    width:100%;
+    display: flex;
+    justify-content: center;
+}
+footer .fishlogo{
+    aspect-ratio: 1667/898;
+    width: 10%;
+    margin-bottom: 20px;
+    
+}
+
+@media screen and (min-width: 1560px) {
+    main .title {
+        left: 20%;
+    }
+    main .textbox {
+        top: 328px;
+    }
+    main .textbox .text{
+        font-size: 2.5rem;
+    }
+}
+@media screen and (max-width: 960px) {
+    
+    main {
+        display: flex;
+        flex-direction: column;
+        align-items: center;
+    }
+    main .bar{
+        display: none;
+    }
+    main .exterior {
+        width: 94%;
+        margin-top: 130px;
+        margin-left: 0;
+        margin-bottom: 50px;
+    }
+    main .title {
+        position: static;
+        margin-bottom: 100px;
+    }
+    main .textbox {
+        position: static;
+    }
+    main .textbox .shopname {
+        text-align: center;
+    }
+    main .textbox .adress,.businesshours{
+        flex-direction: column;
+        align-items: center;
+    }
+    main .textbox p{
+        text-align: center;
+        line-height: 25px;
+    }
+    main .textbox{
+        display: flex;
+        flex-direction: column;
+        align-items: center;
+    }
+    footer .fishlogo{
+        width: 100px;
+    }
+
+}
+
+@media screen and (max-width: 560px) {
+
+    header .fishlogo{
+        width: 60px
+    }
+    header a {
+        font-size: 1.3rem;
+    }
+    header .lineicon{
+        display: none;
+    }
+    header a{
+        margin-left:0;
+    }
+    header .topbutton, .menubutton, .aboutbutton{
+        margin-left: 12vw;
+    }
+
+    main .exterior{
+        margin-top: 90px;
+    }
+    main .title .text{
+        font-size: 2.1rem;
+    }
+    main .textbox .shopname{
+        font-size: 1.7rem;
+    }
+    main .textbox .shopname span{
+        font-size: 3.5rem;
+    }
+    main .textbox .adress, .businesshours, .line-text{
+        font-size: 1.5rem;
+    }
+    footer .fishlogo{
+        width: 75px;
+    }
+    .foodmenu .food-title .text{
+        font-size: 2.1rem;
+    }
+    
+}

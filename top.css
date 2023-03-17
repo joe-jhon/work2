@@ -1,0 +1,856 @@
+html, body, div, span, applet, object, iframe, h1, h2, h3, h4, h5, h6, p, blockquote, pre, a, abbr, acronym, address, big, cite, code, del, dfn, em, img, ins, kbd, q, s, samp, small, strike, strong, sub, sup, tt, var, b, u, i, center, dl, dt, dd, ol, ul, li, fieldset, form, label, legend, table, caption, tbody, tfoot, thead, tr, th, td, article, aside, canvas, details, embed, figure, figcaption, footer, header, hgroup, menu, nav, output, ruby, section, summary, time, mark, audio, video {
+    margin: 0;
+    padding: 0;
+    border: 0;
+    font-size: 100%;
+    font-weight: 500;
+    margin-bottom: 0;
+    line-height: 1.2;
+}
+
+html{font-size: 10px;}
+
+#wrapper {
+    font-family:Anago,Ryo Gothic PlusN EL,Ryo Gothic PlusN L,Ryo Gothic PlusN B,Arial,Hiragino Kaku Gothic ProN,Hiragino Sans,Meiryosans-serif;
+    background-color: #FFFFFF;
+    max-width: 100%;
+    overflow:hidden;
+    background-color: rgba(239,239,239,0.0);
+}
+
+header{
+    width:100vw;
+    height: 105px;
+    position: fixed;
+    z-index: 10;
+}
+header a{
+    font-size:1.8rem;
+    text-decoration: none;
+    color: #000000;
+    margin-left: 7vw;
+    position: relative;
+    display: inline-block;
+}
+header a::after {
+    position: absolute;
+    bottom: -4px;
+    left: -30%;
+    content: '';
+    width: 160%;
+    height: 1px;
+    background: #000;
+    transform: scale(0, 1);
+    transform-origin: left top;
+    transition: transform .3s;
+}
+  header a:hover::after {
+    transform: scale(1, 1);
+}
+
+.header-inner{
+    display:flex;
+    justify-content: space-between;
+    align-items: center;
+    padding:26.5px 3% 26.5px 3%;
+}
+header .menubar{
+    display: flex;
+    align-items: center;
+}
+header .fishlogo{
+    width:100px;
+}
+header .lineicon{
+    width:29px;
+}
+
+/*-------------------js-------------------------*/
+.fade-in {
+    opacity: 0;
+    transition-duration: 1s;
+    transition-property: opacity, transform;
+}
+
+.fade-in-up {
+    transform: translate(0, 50px);
+}
+.fade-in-left {
+    transform: translate(-50px, 0);
+}
+.fade-in-slow{
+    opacity: 0;
+    transition-duration: 4s;
+    transition-property: opacity, transform;
+}
+.fade-in-slow2{
+    opacity: 0;
+    transition-duration: 7s;
+    transition-property: opacity, transform;
+}
+.scroll-in {
+    opacity: 1;
+    transform: translate(0, 0);
+}
+/*-------------------js-------------------------*/
+
+.mainvisual .background{
+    background-image:url(images/top-image.png);
+    background-repeat: no-repeat;
+    width: 100%;
+    height:62.8vw;
+    background-size: 83%;
+    display: flex;
+    justify-content: flex-end;
+    align-items: center;
+}
+.top-text {
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    width:423px ;
+    height:306px ;
+    background-color:rgba(255,255,255,0.8);
+    margin-top: 20%;
+    margin-right: 7%;
+}
+.mainvisual {
+    background-color: #EFEFEF;
+    padding-top: 195px;
+    padding-bottom: 290px;
+}
+.mainvisual p{
+    font-family: Ryo Gothic PlusN EL;
+    font-size: 2.1rem;
+    letter-spacing: 4px;
+    line-height: 44px;
+    margin-left: 4.3rem;
+}
+.mainvisual .text1{
+    margin-bottom:28px;
+}
+.about{
+    background-color: rgba(0,0,0,0.0);
+    position: relative;
+}
+.about .background{
+    background-image:url(images/exterior_boke.png);
+    background-attachment: fixed;
+    background-position: center;
+    background-size: 100% auto;
+    background-repeat: no-repeat;
+    height: 260vh;
+}
+.about .catchcopy{
+    font-family: Ryo Gothic PlusN EL;
+    color: #FFFFFF;
+    writing-mode: vertical-rl;
+    font-size: 1.8rem;
+    letter-spacing: 20px;
+    line-height: 6px;
+    position: absolute;
+    top: 59vh;
+    left: 46vw;
+}
+.about .catchcopy .text1{
+    margin-top: -75px;
+    margin-left: 20px;
+}
+.about .catchcopy .text3{
+    margin-top: 75px;
+    margin-right: 20px;
+}
+.about .gradation{
+    width:100%;
+    height: 60%;
+    position: absolute;
+    bottom:0;
+    background: -moz-linear-gradient(top, transparent, #000);
+    background: -webkit-linear-gradient(top, transparent, #000);
+    background: linear-gradient(to bottom, transparent, #000);
+    opacity: 0.7;
+}  
+.about .shop{
+    width:100%;
+    display: flex;
+    flex-direction: row;
+    align-items:flex-end;
+    position: absolute;
+    bottom: 17%;
+    z-index: 2;
+}
+.about .exterior{
+    width: 54%;
+    margin-left: -10%;
+}
+.about .about-text{
+    font-family: Ryo Gothic PlusN EL;
+    font-size:1.7rem;
+    color:#FFF;
+    margin-left: 4%;
+}
+.about .about-text p{
+    line-height: 47px;
+}
+.about .about-text .text1 {
+    margin-bottom: 44px;
+}
+.about .about-text .text2 {
+    margin-bottom: 44px;
+}
+.about .about-text .text3 {
+    margin-bottom: 20px;
+}
+.about .about-text .text4 a{
+    margin-left: 64%;
+    text-decoration: none;
+    color: #FFF;
+    border-bottom: dashed 2px #fff;
+    padding-bottom: 8px;
+    transition: 0.7s;
+}
+.about .about-text .text4 a:hover{
+    color: rgb(228, 207, 13);
+    border-bottom: dashed 2px rgb(228, 207, 13);
+}
+
+.food .food-title{
+    background-image:url(images/grdation_white.png);
+    background-repeat: no-repeat;
+    aspect-ratio: 1360/400;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    background-size: cover;
+}
+
+.food .food-title .text{
+    font-size: 2rem;
+    padding-bottom: 3px;
+}
+.food .food-title .border-line{
+    border-top: 0.5px black;
+    width: 24px;
+    height: 0.5px;
+    background-color: #000;
+}
+.food .food_top{
+    height:46vw;
+    padding-bottom: 17vw;
+}
+.food .food_top .amago_back{
+    width: 45%;
+    margin-left: 2%;
+    margin-top: -5%;
+    position: absolute;
+}
+.food .food_top .amago_front{
+    width:58%;
+    margin-left: 30%;
+    margin-top: 7%;
+    position: absolute;
+}
+.food .food_top h1{
+    font-size: 2.3rem;
+    font-family: Ryo Gothic PlusN EL;
+    position: absolute;
+    margin-top: 2%;
+    margin-left: 73%;
+}
+.food .food_top p{
+    font-size: 1.6rem;
+    font-family: Ryo Gothic PlusN EL;
+    width: 26%;
+    position: absolute;
+    margin-top: 27%;
+    margin-left: 3%;
+    line-height: 39px;
+    letter-spacing: 1.4px;
+}
+.food .food_bottom{
+    background-color: #362812;
+    padding: 13% 0% 13% 0%;
+}
+.food .food_bottom .bottom_menu{
+    display: flex;
+    flex-direction:row;
+    justify-content: space-between;
+    margin-bottom: 100px;
+}
+.food .food_bottom img{
+    width: 26vw;
+}
+.food .food_bottom .food1{ 
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    margin-left: 4vw; 
+}
+.food .food_bottom .food2{ 
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+}
+.food .food_bottom .food3{ 
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    margin-right: 4vw; 
+}
+
+
+
+.food .food_bottom h1{
+    font-family: Ryo Gothic PlusN L;
+    color: #FFF;
+    font-size: 18px;
+    margin-top: 52px;
+    letter-spacing: 1px;
+}
+.food .food_bottom p{
+    font-family: Ryo Gothic PlusN EL;
+    color: #FFF;
+    font-size: 15px;
+    width: 26vw;
+    margin-top: 47px;
+    letter-spacing: 1px;
+    line-height: 27px;
+}
+.food .food_menubutton{
+    font-family: Ryo Gothic PlusN EL;
+    text-decoration: none;
+    font-size: 15px;
+    color: #FFF;
+    border: 1.1px solid #FFF;
+    border-radius: 20px 0px;
+    padding: 12px;
+    margin-top: 100px;    
+    transition: 0.2s;
+}
+.food .food_menubutton:hover{
+    padding: 9px;
+    margin-top: 103px;
+    margin-right: 3px;
+    margin-bottom: 3px;
+    margin-left: 3px;
+}
+
+
+.beer .beer-title{
+    background-image:url(images/grdation_white.png);
+    background-repeat: no-repeat;
+    transform: rotate(180deg);
+    aspect-ratio: 1360/400;
+    display: flex;
+    flex-direction: column-reverse;
+    justify-content: center;
+    align-items: center;
+    background-size: cover;
+}
+
+.beer .beer-title .text{
+    font-size: 2rem;
+    padding-bottom: 3px;
+    transform: rotate(-180deg);
+}
+.beer .beer-title .border-line{
+    border-top: 0.5px black;
+    width: 24px;
+    height: 0.5px;
+    background-color: #000;
+    transform: rotate(-180deg);
+}
+.beer .beermenu{
+    padding-bottom: 13%;
+}
+.beer .beer_top{
+    height:72vw;
+    position: relative;
+}
+.beer .beer_top .pic1{
+    width: 44%;
+    margin-left: 50%;
+    margin-top: -7%;
+    position: absolute;
+    z-index: 2;
+}
+.beer .beer_top .pic2{
+    width: 66%;
+    margin-top: 11%;
+    position: absolute;
+    z-index: 1;
+}
+.beer .beer_top .textbox{
+    font-family: Ryo Gothic PlusN EL;
+    width: 550px;
+    height: 552px;
+    background-color: rgba(255,255,255,0.8);
+    display: flex;
+    flex-direction: column;
+    position: absolute;
+    margin-left: 57%;
+    margin-top: 28%;
+    z-index: 3;
+}
+.beer .beer_top .textbox .maintext{
+    font-size: 1.7rem;
+    line-height: 45px;
+    letter-spacing: 1px;
+    margin: 72px 25px 20px 25px;
+    
+}
+.beer .beer_top .textbox .subtext{
+    display: block;
+    font-size: 1.4rem;
+    text-align: right;
+    margin-right: 50px;
+}
+.beer .beer_menubutton{
+    font-family: Ryo Gothic PlusN EL;
+    text-decoration: none;
+    font-size: 1.5rem;
+    color: rgb(0, 0, 0);
+    border: 1.1px solid rgb(0, 0, 0);
+    border-radius: 20px 0px;
+    padding: 12px;
+    position: absolute;
+    bottom: -53px;
+    left: 189px;
+    transition: 0.2s;
+}
+.beer .beer_menubutton:hover{
+    padding: 9px;
+    margin-bottom: 3px;
+    left: 192px;
+}
+footer{
+    display:flex;
+    flex-direction: row;
+    justify-content: center;
+    align-items: center;
+    padding-top: 70px;
+    padding-bottom: 70px;
+    background-color: #EFEFEF;
+}
+footer .fishlogo{
+    width: 346px;
+    margin-right: 50px;
+    margin-left: 50px;
+}
+footer .textbox p{
+    font-family: Ryo Gothic PlusN EL;
+    text-decoration: none;
+}
+footer .textbox .shopname{
+    font-size: 2.3rem;
+    letter-spacing: 2.1px;
+    margin-bottom: 65px;
+}
+footer .textbox .shopname span{
+    font-family: Anago;
+    font-size: 4.6rem;
+}
+footer .textbox .businesshours, .line-text{
+    font-size: 1.5rem;
+    letter-spacing: 2.3px;
+}
+footer .textbox .businesshours{
+    margin-bottom: 50px;
+}
+footer .textbox .line-text{
+    margin-bottom: 20px;   
+}
+footer .textbox .lineicon{
+    width: 19px;
+    height: 19px;
+    margin-right: 8px;
+}
+footer .textbox .linebotton{
+    width: 197px;
+    height: 52px;
+    border: 1.1px solid #000;
+    border-radius: 11px;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    transition: 0.2s;
+}
+footer .textbox  .linebotton:hover{
+    border: 1.1px solid rgb(13, 249, 49);
+    background-color: rgb(250, 250, 250);
+}
+footer .textbox .line{
+    text-decoration-line: none;
+    color: #000;
+    font-size: 1.6rem;
+    letter-spacing: 2px;
+}
+
+@media screen and (min-width: 1560px) {
+    .foodmenu .food-title{
+        aspect-ratio: 1360/300;
+    }
+    .drinkmenu .drink-title{
+        aspect-ratio: 1360/300;
+    }
+    .about .shop{
+        align-items: center;
+    }
+    .food .food_bottom p{
+        line-height: 37px;
+    }
+    .beer .beer_top .textbox{
+        width: 600px;
+        height: 600px;
+    }
+    .beer .beer_top .textbox .maintext{
+        line-height: 55px;
+    }
+}
+@media screen and (max-width: 1260px) {
+    .about .background {
+        background-size: auto 100%;
+    }
+    .about .shop{
+        align-items: center;
+    }
+    .food .food_top .amago_front{
+        margin-left: 37%;
+    }
+    .food .food_top p{
+        font-size: 1.5rem;
+        width: 33%;
+        line-height: 35px;
+    }
+    .food .food_bottom h1{
+        font-size: 1.6rem;
+    }
+    .food .food_bottom p{
+        line-height: 30px;
+    }
+    .beer .beer_top{
+        height: 91vw;
+    }
+    .beer .beer_top .pic1{
+        margin-left: 54%;
+    }
+    .beer .beer_top .textbox{
+        width: 500px;
+        margin-left: 47%;
+    }
+}
+@media screen and (max-width: 960px) {
+    .mainvisual .background{
+        background-image: url(images/top-image-sp.png);
+        background-size: auto 100%;
+        background-position: left;
+        width: 90%;
+        height: 80vh;
+    }
+    .top-text{
+        margin-top: 83vh;
+        margin-right: -8%;
+    }
+    .about .shop{
+        flex-direction: column;
+        align-items: flex-start;
+    }
+    .about .exterior{
+        width: 55%;
+        margin-bottom: 10%;
+    }
+    .about .about-text{
+        margin-left: 10%;
+    }
+    .about .about-text .text4 a{
+        margin-left: 0;
+        border-bottom: dashed 1px #fff;
+    }
+    .about .about-text .text4{
+        text-align: center;
+    }
+    .food .food_top{
+        height: 104vw;
+    }
+    .food .food_top .amago_back{
+        margin-left: 0;
+        width: 51%;
+    }
+    .food .food_top .amago_front{
+        width: 85%;
+        margin-top: 17%;
+        margin-left: 12%;
+    }
+    .food .food_top h1{
+        margin-top: 6%;
+        margin-left: 62%;
+    }
+    .food .food_top p {
+        width: 80%;
+        margin-top: 80%;
+        margin-left: 10%;
+    }
+    .food .food_bottom .bottom_menu{
+        flex-direction: column;
+        align-items: center;
+    }
+    .food .food_bottom .food1{
+        margin-left: 0;
+        margin-bottom: 20%;
+    }
+    .food .food_bottom .food2{
+        margin-bottom: 20%;
+    }
+    .food .food_bottom .food3{
+        margin-right: 0;
+    }
+    .food .food_bottom img{
+        width: 40%;
+    }
+    .fade-in-slow{
+        transition-duration: 1s;
+        transition-property: opacity, transform;
+    }
+    .fade-in-slow2{
+        transition-duration: 1s;
+        transition-property: opacity, transform;
+    }
+
+
+
+
+    .food .food_bottom p{
+        width: 80%;
+    }
+    .food .food_menubutton{
+        margin-top: 15%;
+    }
+    .beer .beer_top{
+        height: calc(84vw + 552px);
+    }
+    .beer .beer_top .pic1{
+        display: none;
+    }
+    .beer .beer_top .pic2{
+        width: 120%;
+        margin-top: 0;
+        margin-left: 10%;
+    }
+    .beer .beer_top .textbox{
+        width: 81%;
+        margin-left: 10%;
+        margin-top: 75vw;
+        background-color: rgba(255,255,255,0.5);
+        align-items: center;
+    }
+    .beer .beer_top .textbox .maintext{
+        margin: 0;
+        text-align: center;
+        line-height: 55px;
+    }
+    .beer .beer_top .textbox .subtext{
+        text-align: center;
+        margin-right: 0;
+        margin-top: 35px;
+    }
+    .beer .beer_menubutton{
+        position: static;
+        margin-top: 100px;
+    }
+    .beer .beermenu{
+        padding-bottom: 30%;
+    }
+/*---------------------------------------------------------------beer_end-----*/
+    footer {
+        margin-top: 0;
+        padding-top: 10%;
+        flex-direction: column-reverse;
+    }
+    footer .textbox{
+        display: flex;
+        flex-direction: column;
+        align-items: center;
+        margin-bottom: 200px;
+    }
+    footer .textbox .shopname{
+        text-align: center;
+        margin-bottom: 25px;
+    }
+    footer .textbox .businesshours{
+        margin-bottom: 100px;
+    }
+    footer .fishlogo{
+        width: 100px;
+    }
+}
+
+@media screen and (max-width: 560px) {
+
+    header .fishlogo{
+        width: 60px
+    }
+    header a {
+        font-size: 1.3rem;
+    }
+    header .lineicon{
+        display: none;
+    }
+    header a{
+        margin-left:0;
+    }
+    header .topbutton, .menubutton, .aboutbutton{
+        margin-left: 12vw;
+    }
+    .mainvisual{
+        padding-top: 140px;
+    }
+    .mainvisual p{
+        letter-spacing: 2px;
+        line-height: 33px;
+        font-size: 1.3rem;
+        margin-left: 20px;
+        width: 210px;
+    }
+    .top-text{
+        align-items: center;
+        width: 250px;
+        height: 200px;
+    }
+    .about .catchcopy{
+        font-size: 1.3rem;
+        letter-spacing: 12px;
+        left: 43vw;
+        display: flex;
+        flex-direction: column;
+        justify-content: center;
+        width: 20%;
+        left:40%
+    }
+    .about .catchcopy .text1 {
+        margin-top: -58px;
+        margin-left: 10px;
+    }
+    .about .catchcopy .text3 {
+        margin-top: 58px;
+        margin-right: 10px;
+    }
+    .about .about-text{
+        font-size: 1.3rem;
+        margin: 0 auto 0;
+        width: 330px;
+    }
+    .about .about-text p {
+        line-height: 32px;
+    }
+    .about .about-text .text4{
+        width: 100vw;
+        margin-left: -5vw;
+    }
+    .food .food-title .text{
+        font-size: 2.1rem;
+    }
+    .food .food_top h1{
+        font-size: 1.6rem;
+    }
+    .food .food_top p {
+        width: 90%;
+        margin-left: 5%;
+        font-size: 1.4rem;
+    }
+    .food .food_top {
+        height: 130vw;
+        padding-bottom: 100px;
+    }
+    .food .food_bottom{
+        padding: 20% 0% 20% 0%;
+    }
+    .food .food_bottom img {
+        width: 60%;
+    }
+    .food .food_bottom p{
+        width: 90%;
+        font-size: 1.4rem
+    }
+    .food .food_bottom .food1{
+        margin-bottom: 30%;
+    }
+    .food .food_bottom .food2{
+        margin-bottom: 30%;
+    }
+    .food .food_menubutton{
+        margin-top: 120px;
+        font-size: 1.1rem;
+        border: 1px solid #FFF;
+    }
+    .beer .beer_top .textbox .maintext{
+        font-size: 1.3rem;
+        line-height: 50px;
+    }
+    .beer .beer_top .textbox .subtext{
+        font-size: 1.1rem;
+    }
+    .beer .beer_top .textbox {
+        width: 96%;
+        margin-left: 2%;
+    }
+    .beer .beer_menubutton{
+        margin-top: 120px;
+        font-size: 1.1rem;
+        border: 0.9px solid #000;
+    }
+    footer{
+        padding-top: 30%;
+        padding-bottom: 20px;
+    }
+    footer .textbox .shopname{
+        font-size: 1.7rem;
+    }
+    footer .textbox .shopname span{
+        font-size: 3.5rem;
+    }
+    footer .textbox .businesshours{
+        font-size: 1.1rem;
+        margin-bottom: 70px;
+    }
+    footer .textbox .line-text{
+        font-size: 1.3rem;
+    }
+    footer .textbox .linebotton{
+        width: 172px;
+        height: 47px;
+        border: 0.7px solid #000;
+    }
+    footer .textbox .lineicon{
+        width: 17px;
+        height: 17px;
+    }
+    footer .textbox .line{
+        font-size: 1.3rem
+    }
+    footer .fishlogo{
+        width: 75px;
+    }
+}
+
+
+
+
+@media screen and (max-width: 800px) {
+    .mainvisual .background{
+        background-position: right;
+    }
+    .about .exterior{
+        width: 65%;
+    }
+}
+
+@media screen and (max-width: 374px) {
+    .about .exterior{
+        width: 70%;
+    }
+    .beer .beer_top .textbox .maintext{
+        letter-spacing: 0.9px;
+        font-size: 1.2rem;
+    }
+}

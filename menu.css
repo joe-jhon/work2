@@ -1,0 +1,1067 @@
+html, body, div, span, applet, object, iframe, h1, h2, h3, h4, h5, h6, p, blockquote, pre, a, abbr, acronym, address, big, cite, code, del, dfn, em, img, ins, kbd, q, s, samp, small, strike, strong, sub, sup, tt, var, b, u, i, center, dl, dt, dd, ol, ul, li, fieldset, form, label, legend, table, caption, tbody, tfoot, thead, tr, th, td, article, aside, canvas, details, embed, figure, figcaption, footer, header, hgroup, menu, nav, output, ruby, section, summary, time, mark, audio, video {
+    margin: 0;
+    padding: 0;
+    border: 0;
+    font-size: 100%;
+    font-weight: 500;
+    margin-bottom: 0;
+    line-height: 1.2;
+}
+
+html{font-size: 10px;}
+
+#wrapper {
+    font-family:Anago,Ryo Gothic PlusN EL,Ryo Gothic PlusN L,Ryo Gothic PlusN B,Arial,Hiragino Kaku Gothic ProN,Hiragino Sans,Meiryosans-serif;
+    background-color: #FFFFFF;
+    max-width: 100%;
+    overflow:hidden;
+    background-color: rgba(239,239,239,0.0);
+}
+
+header{
+    width:100vw;
+    height: 105px;
+    position: fixed;
+    z-index: 10;
+}
+header a{
+    font-size:1.8rem;
+    text-decoration: none;
+    color: #000000;
+    margin-left: 7vw;
+    position: relative;
+    display: inline-block;
+}
+header a::after {
+    position: absolute;
+    bottom: -4px;
+    left: -30%;
+    content: '';
+    width: 160%;
+    height: 1px;
+    background: #000;
+    transform: scale(0, 1);
+    transform-origin: left top;
+    transition: transform .3s;
+}
+  header a:hover::after {
+    transform: scale(1, 1);
+}
+.header-inner{
+    display:flex;
+    justify-content: space-between;
+    align-items: center;
+    padding:26.5px 3% 26.5px 3%;
+}
+header .menubar{
+    display: flex;
+    align-items: center;
+}
+header .fishlogo{
+    width:100px;
+}
+header .lineicon{
+    width:29px;
+}
+/*---------------------------------------------------------------food_start-----*/
+.foodmenu .food-title .bar{
+    width: 100%;
+    margin-top:106.87px;
+}
+.foodmenu .food-title{
+    background-image:url(images/gradation_hot.png);
+    background-repeat: no-repeat;
+    aspect-ratio: 1360/400;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    margin-top:106.87px;
+    background-size: cover;
+}
+
+.foodmenu .food-title .text{
+    font-size: 2rem;
+    padding-bottom: 3px;
+}
+.foodmenu .food-title .border-line{
+    border-top: 0.5px black;
+    width: 24px;
+    height: 0.5px;
+    background-color: #000;
+}
+.foodmenu .food-top .text{
+    display: flex;
+    flex-direction: row;
+    align-items: center;
+    padding-top: 10%;
+    padding-bottom: 15%;
+}
+.foodmenu .food-top .text .menu{
+    font-family: Ryo Gothic PlusN EL;
+    font-size: 1.7rem;
+    letter-spacing: 0.3px;
+    line-height: 38px;
+    margin-left: 10%;
+}
+.foodmenu .food-top .text .price{
+    font-family: Ryo Gothic PlusN EL;
+    font-size: 1.7rem;
+    letter-spacing: 0.3px;
+    line-height: 38px;
+    margin-left: 68px;
+    text-align: right;
+}
+.foodmenu .food-top .text .title{
+    font-family: Anago;
+    font-size: 4.9rem;
+    margin-left: 20%;
+}
+.foodmenu .food-top .title_barbecue{
+    display: none;
+}
+
+.foodmenu .food-middle .tapas{
+    width: 474.09px;
+    display: flex;
+    flex-direction: column;
+    margin: 0 0 0 auto;
+    margin-right: 10%;
+}
+.foodmenu .food-middle .tapas .title{
+    font-family: Anago;
+    font-size: 4.9rem;
+    margin-bottom: 75px;
+    text-align: center;
+}
+.foodmenu .food-middle .tapas .menubox{
+    display: flex;
+    flex-direction: row;
+    justify-content: space-between;
+}
+.foodmenu .food-middle .tapas .menubox .menu{
+    font-family: Ryo Gothic PlusN EL;
+    font-size: 1.7rem;
+    letter-spacing: 0.3px;
+    line-height: 38px;
+}
+.foodmenu .food-middle .tapas .menubox .price{
+    font-family: Ryo Gothic PlusN EL;
+    font-size: 1.7rem;
+    letter-spacing: 0.3px;
+    line-height: 38px;
+    text-align: right;
+}
+
+
+/*-------------------js-------------------------*/
+.fade-in {
+    opacity: 0;
+    transition-duration: 1s;
+    transition-property: opacity, transform;
+}
+.fade-in-up {
+    transform: translate(0, 50px);
+}
+.scroll-in {
+    opacity: 1;
+    transform: translate(0, 0);
+}
+/*-------------------js-------------------------*/
+
+
+.foodmenu .food-middle img{
+    width: 35%;
+    aspect-ratio: 479/725;
+    position: absolute;
+    margin-top: -15%;
+}
+.foodmenu .food-middle{
+    background-color: #EFEFEF;
+    padding-top: 10%;
+    padding-bottom: 17%;
+}
+.foodmenu .food-bottom{
+    aspect-ratio: 1360/709;
+    width: 100%;
+    background-color: #362812;
+    position: relative;
+}
+.foodmenu .food-bottom img{
+    width:91%;
+    position: absolute;
+    right: -7%;
+    margin-top: -7%;
+}
+.foodmenu .food-bottom .alacarte{
+    display: flex;
+    flex-direction: column;
+    position: absolute;
+    color: #FFFFFF;
+    left: 10%;
+    margin-top: -4%;
+    align-items: flex-end;
+}
+.foodmenu .food-bottom .alacarte .title {
+    font-family: Anago;
+    font-size: 4.9rem;
+    margin-bottom: 75px;
+}
+.foodmenu .food-bottom .alacarte .menubox{
+    display:flex;
+    flex-direction: row;
+}
+.foodmenu .food-bottom .alacarte .menubox .menu{
+font-family: Ryo Gothic PlusN EL;
+font-size: 1.7rem;
+letter-spacing: 0.3px;
+line-height: 38px;
+}
+.foodmenu .food-bottom .alacarte .menubox .price{
+    font-family: Ryo Gothic PlusN EL;
+    font-size: 1.7rem;
+    letter-spacing: 0.3px;
+    line-height: 38px;
+    text-align: right;
+    margin-left: 106px;
+}
+/*---------------------------------------------------------------food_end-----*/
+
+/*---------------------------------------------------------------drink_start-----*/
+.drinkmenu .drink-title{
+    background-image:url(images/gradation_hot.png);
+    background-repeat: no-repeat;
+    transform: rotate(180deg);
+    aspect-ratio: 1360/400;
+    display: flex;
+    flex-direction: column-reverse;
+    justify-content: center;
+    align-items: center;
+    background-size: cover;
+}
+
+.drinkmenu .drink-title .text{
+    font-size: 2rem;
+    padding-bottom: 3px;
+    transform: rotate(-180deg);
+}
+.drinkmenu .drink-title .border-line{
+    border-top: 0.5px black;
+    width: 24px;
+    height: 0.5px;
+    background-color: #000;
+    transform: rotate(-180deg);
+}
+.drinkmenu .drink-top{
+    padding-top: 10%;
+    padding-bottom: 20%;
+}
+.drinkmenu .drink-top span{
+    font-family: Ryo Gothic PlusN B;
+}
+.drinkmenu .drink-top .title{
+    font-family: Anago;
+    font-size: 5rem;
+    letter-spacing: 1px;
+    position:absolute;
+    margin-left: 10%;
+}
+.drinkmenu .drink-top .subtitle{
+    font-family: Anago;
+    font-size: 3rem;
+    letter-spacing: 0.3px;
+    margin-bottom: 65px;
+    text-align: center
+}
+.drinkmenu .drink-top .menubox{
+    display: flex;
+    justify-content: space-between;
+}
+.drinkmenu .drink-top .menu{
+    font-family: Ryo Gothic PlusN EL;;
+    font-size: 1.7rem;
+    letter-spacing: 0.3px;
+    line-height: 38px;
+}
+.drinkmenu .drink-top .price{
+    font-family:Ryo Gothic PlusN EL;;
+    font-size: 1.7rem;
+    letter-spacing: 0.3px;
+    line-height: 38px;
+    text-align: right;
+}
+.drinkmenu .drink-top .okayama{
+    width: 389px;
+    margin: 0 0 0 auto;
+    margin-right: 20%;
+}
+.drinkmenu .drink-top .japanese{
+    width: 439px;
+    margin-left: 10%;
+    margin-top: -45px;
+}
+.drinkmenu .drink-top .world{
+    width: 470px;
+    margin: 0 0 0 auto;
+    margin-right: 10%;
+    margin-top: -540px;
+}
+.drinkmenu .drink-top .pic1{
+    width:32%;
+    position: absolute;
+    margin-top: -21%;
+    margin-left: -4%;
+}
+.drinkmenu .drink-top .pic2{
+    width:37%;
+    position: absolute;
+    margin-left: 15%;
+    margin-top: -5%;   
+}
+.drinkmenu .drink-middle{
+    padding-top: 20%;
+    padding-bottom: 10%;
+    background-color: #EFEFEF;
+}
+.drinkmenu .drink-middle .title{
+    font-family: Anago;
+    font-size: 5rem;
+    letter-spacing: 1px;
+    margin-bottom: 65px;
+}
+.drinkmenu .drink-middle .menu{
+    font-family: Ryo Gothic PlusN EL;
+    font-size: 1.7rem;
+    letter-spacing: 0.3px;
+    line-height: 38px;
+}
+.drinkmenu .drink-middle .price{
+    font-family:Ryo Gothic PlusN EL;
+    font-size: 1.7rem;
+    letter-spacing: 0.3px;
+    line-height: 38px;
+    text-align: right;
+}
+.drinkmenu .drink-middle .menubox{
+    display: flex;
+    justify-content: space-between;
+}
+.drinkmenu .drink-middle .flesh{
+    width: 383px;
+    margin-left: 10%;
+}
+.drinkmenu .drink-middle .flesh .menubox{
+    margin-left: 30px;
+}
+.drinkmenu .drink-middle .standard .menubox{
+    margin-right: 30px;
+}
+.drinkmenu .drink-middle .standard{
+    width: 410px;
+    margin: 0 0 0 auto;
+    margin-right: 10%;
+}
+.drinkmenu .drink-middle .standard .title{
+    text-align: end;
+}
+.drinkmenu .drink-middle .standard .menubox{
+    margin-right: 30px;
+}
+.drinkmenu .drink-middle .whisky{
+    width: 342px;
+    margin-left: 20%;
+}
+.drinkmenu .drink-middle .whisky .menubox{
+    margin-left: 30px;
+}
+
+.drinkmenu .drink-bottom {
+    position: relative;
+    padding-top: 10%;
+    padding-bottom: 10%;
+}
+.drinkmenu .drink-bottom .pic1{
+    width: 51%;
+    position: absolute;
+    right: -10%;
+    top:-8%
+}
+.drinkmenu .drink-bottom .title{
+    font-family: Anago;
+    font-size: 5rem;
+    letter-spacing: 1px;
+    margin-left: 10%;
+    margin-bottom: 100px;
+}
+.drinkmenu .drink-bottom .subtitle{
+    font-family: Anago;
+    font-size: 3rem;
+    letter-spacing: 0.3px;
+    margin-bottom: 25px;
+    text-align: center
+}
+.drinkmenu .drink-bottom .menubox{
+    display: flex;
+    justify-content: space-between;
+    margin-bottom: 50px;
+}
+.drinkmenu .drink-bottom .menu{
+    font-family: Ryo Gothic PlusN EL;;
+    font-size: 1.7rem;
+    letter-spacing: 0.3px;
+    line-height: 38px;
+}
+.drinkmenu .drink-bottom .price{
+    font-family:Ryo Gothic PlusN EL;;
+    font-size: 1.7rem;
+    letter-spacing: 0.3px;
+    line-height: 38px;
+    text-align: right;
+}
+.drinkmenu .drink-bottom .standard{ 
+    width: 280px; 
+    margin-left: 10%;
+}
+.drinkmenu .drink-bottom .gin{ 
+    width: 242px; 
+    margin-left: 32%;
+}
+.drinkmenu .drink-bottom .tequila{ 
+    width: 348px; 
+    margin-left: 10%;
+}
+.drinkmenu .drink-bottom .vodka{ 
+    width: 363px; 
+    margin-left: 38%;
+}
+.drinkmenu .drink-bottom .other{ 
+    width: 314px; 
+    margin: 0 0 0 auto;
+    margin-right: 10%;
+}
+.drinkmenu .drink-cafe{
+    background-image: url(images/cafe-gradationback.png);
+    background-repeat: no-repeat;
+    background-size: cover;
+    color: #FFFFFF;
+    padding-top: 10%;
+    padding-bottom: 10%;
+}
+
+
+
+.drinkmenu .drink-cafe .title{
+    font-family: Anago;
+    font-size: 5rem;
+    letter-spacing: 1px;
+    margin-left: 10%;
+    margin-bottom: 100px;
+}
+.drinkmenu .drink-cafe .subtitle{
+    font-family: Anago;
+    font-size: 3rem;
+    letter-spacing: 0.3px;
+    margin-bottom: 25px;
+    text-align: center
+}
+.drinkmenu .drink-cafe .menubox{
+    display: flex;
+    justify-content: space-between;
+    margin-bottom: 50px;
+}
+.drinkmenu .drink-cafe .menu{
+    font-family: Ryo Gothic PlusN EL;;
+    font-size: 1.7rem;
+    letter-spacing: 0.3px;
+    line-height: 38px;
+}
+.drinkmenu .drink-cafe .price{
+    font-family:Ryo Gothic PlusN EL;;
+    font-size: 1.7rem;
+    letter-spacing: 0.3px;
+    line-height: 38px;
+    text-align: right;
+}
+.drinkmenu .drink-cafe .flesh, .espresso, .other{
+    width: 322px;
+}
+.drinkmenu .drink-cafe .flesh{
+    margin-left: 20%;
+}
+.drinkmenu .drink-cafe .espresso{
+    margin: 0 0 0 auto;
+    margin-right: 20%;
+}
+.drinkmenu .drink-cafe .other{
+    margin-left: 27%;
+}
+/*---------------------------------------------------------------drink_end-----*/
+footer{
+    display:flex;
+    flex-direction: row;
+    justify-content: center;
+    align-items: center;
+    padding-top: 70px;
+    padding-bottom: 70px;
+    background-color: #EFEFEF;
+}
+footer .fishlogo{
+    width: 346px;
+    margin-right: 50px;
+    margin-left: 50px;
+}
+footer .textbox p{
+    font-family: Ryo Gothic PlusN EL;
+    text-decoration: none;
+}
+footer .textbox .shopname{
+    font-size: 2.3rem;
+    letter-spacing: 2.1px;
+    margin-bottom: 65px;
+    line-height: 30px;
+}
+footer .textbox .shopname span{
+    font-family: Anago;
+    font-size: 4.6rem;
+}
+footer .textbox .businesshours, .line-text{
+    font-size: 1.5rem;
+    letter-spacing: 2.3px;
+}
+footer .textbox .businesshours{
+    margin-bottom: 50px;
+}
+footer .textbox .line-text{
+    margin-bottom: 20px;   
+}
+footer .textbox .lineicon{
+    width: 19px;
+    height: 19px;
+    margin-right: 8px;
+}
+footer .textbox .linebotton{
+    width: 197px;
+    height: 52px;
+    border: 1.1px solid #000;
+    border-radius: 11px;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    transition: 0.2s;
+}
+footer .textbox  .linebotton:hover{
+    border: 1.1px solid rgb(13, 249, 49);
+    background-color: rgb(250, 250, 250);
+}
+footer .textbox .line{
+    text-decoration-line: none;
+    color: #000;
+    font-size: 1.6rem;
+    letter-spacing: 2px;
+}
+
+@media screen and (min-width: 1560px) {
+    .foodmenu .food-title{
+        aspect-ratio: 1360/300;
+    }
+    .drinkmenu .drink-title{
+        aspect-ratio: 1360/300;
+    }
+}
+
+@media screen and (max-width: 1250px) {
+
+    .foodmenu .food-top .text .title{
+        margin-left: 10%;
+    }
+    .drinkmenu .drink-top .title{
+        margin-left: 2%;
+    }
+    .drinkmenu .drink-top .okayama{
+        margin-right: 2%;
+    }
+    .drinkmenu .drink-top .japanese{
+        margin-left: 2%;
+    }
+    .drinkmenu .drink-top .world{
+        margin-right: 2%;
+    }
+    .drinkmenu .drink-top .pic2{
+        margin-left: 10%;
+    }
+    footer .fishlogo{
+        width: 244px;
+    }
+
+}
+
+@media screen and (max-width: 960px) {
+
+    .foodmenu .food-top .text {
+        width: 80%;
+        justify-content: space-between;
+        padding-top: 0; 
+        padding-bottom: 0;
+    }
+    .foodmenu .food-top{
+        display: flex;
+        flex-direction: column;
+        align-items: center;
+        padding-top:15%;
+        padding-bottom:15%;
+    }
+
+    .foodmenu .food-top .title{
+        display: none;
+    }
+    .foodmenu .food-top .title_barbecue{
+        display: block;
+        font-family: Anago;
+        font-size: 3rem;
+        margin-bottom: 50px;
+    }
+    .foodmenu .food-top .text .menu{
+        margin-left: 0;
+    }
+    .foodmenu .food-top .text .price{
+        margin-left: 0;       
+    }
+    .foodmenu .food-middle{
+        padding-top: 15%;
+        padding-bottom: 15%;
+    }
+    .foodmenu .food-middle img{
+        display: none;
+    }
+    .foodmenu .food-middle .tapas{
+        width: 80%;
+    }
+    .foodmenu .food-middle .tapas .title{
+        font-size: 3rem;
+        margin-bottom: 50px;
+    }
+    .foodmenu .food-bottom img{
+        display: none;
+    }
+    .foodmenu .food-bottom .alacarte {
+        position: static;
+        color: #FFFFFF;
+        align-items: center;
+        margin-top: 0%;
+        padding-top: 15%;
+        padding-bottom:15%;
+    }
+    .foodmenu .food-bottom .alacarte .title{
+        font-size: 3rem;
+        margin-bottom:50px;
+    }
+    .foodmenu .food-bottom .alacarte .menubox{
+        justify-content: space-between;
+        width: 80%;
+    }
+    .foodmenu .food-bottom .alacarte .menubox .price{
+        margin-left: 0;
+    }
+    .drinkmenu .drink-top{
+        display: flex;
+        flex-direction: column;
+        align-items: center;
+        padding-top: 15%;
+        padding-bottom: 15%;
+    }
+    .drinkmenu .drink-top .title{
+        position: static;
+        font-size: 3rem;
+        margin-bottom: 100px;
+        margin-left: 0;
+    }
+    .drinkmenu .drink-top .subtitle{
+        font-size: 2.5rem;
+        margin-bottom: 50px;
+    }
+    .drinkmenu .drink-top .okayama {
+        width: 80%;
+        margin: 0;
+        margin-right: 0; 
+        margin-bottom: 150px;
+    }
+    .drinkmenu .drink-top .pic1{
+        display: none;
+    }
+    .drinkmenu .drink-top .pic2{
+        display: none;
+    }
+    .drinkmenu .drink-top .japanese{
+        margin-top: 0;
+        margin-left: 0;
+        width: 80%;
+        margin-bottom: 150px;
+    }
+    .drinkmenu .drink-top .world{
+        width: 80%;
+        margin: 0;
+        margin-right: 0;
+        margin-top: 0;
+    }
+    .drinkmenu .drink-middle{
+        display: flex;
+        flex-direction: column;
+        align-items: center;
+        padding-top: 15%;
+        padding-bottom: 15%;
+    }
+    .drinkmenu .drink-middle .title{
+        font-size: 3rem;
+        margin-bottom: 50px;
+        margin-left: 0;
+        text-align: center;
+    }
+    .drinkmenu .drink-middle .flesh{
+        width: 80%;
+        margin-left: 0;
+        margin-bottom: 150px;
+    }
+    .drinkmenu .drink-middle .standard{
+        width: 80%;
+        margin: 0;
+        margin-right: 0;
+        margin-bottom: 150px;
+    }
+    .drinkmenu .drink-middle .whisky{
+        width: 80%;
+        margin-left: 0;
+    }
+    .drinkmenu .drink-middle .standard .title{
+        text-align: center;
+    }
+    .drinkmenu .drink-middle .flesh .menubox{
+        margin-left: 0;
+    }
+    .drinkmenu .drink-middle .standard .menubox{
+        margin-right: 0;
+    }
+    .drinkmenu .drink-middle .whisky .menubox{
+        margin-left: 0;
+    }
+    .drinkmenu .drink-bottom .pic1{
+        display: none;
+    }
+    .drinkmenu .drink-bottom {
+        position: static;
+        display: flex;
+        flex-direction: column;
+        align-items: center;
+        padding-top: 15%;
+        padding-bottom: 15%;
+    }
+    .drinkmenu .drink-bottom .title {
+        font-size: 3rem;
+        margin-left: 0;
+        margin-bottom: 100px;
+    }
+    .drinkmenu .drink-bottom .subtitle{
+        font-size: 2.5rem;
+    }
+    .drinkmenu .drink-bottom .standard{
+        width: 80%;
+        margin-left:0;
+    }
+    .drinkmenu .drink-bottom .gin{
+        width: 80%;
+        margin-left: 0;
+    }
+    .drinkmenu .drink-bottom .tequila{
+        width: 80%;
+        margin-left: 0;
+    }
+    .drinkmenu .drink-bottom .vodka{
+        width: 80%;
+        margin-left: 0;
+    }
+    .drinkmenu .drink-bottom .other{
+        width: 80%;
+        margin: 0;
+        margin-left: 0;
+    }
+
+    .drinkmenu .drink-bottom .menubox{
+        margin-bottom: 0;
+    }
+    .drinkmenu .drink-bottom .standard, .gin, .tequila, .vodka {
+        margin-bottom: 150px;
+    }  
+    .drinkmenu .drink-cafe{
+        display: flex;
+        flex-direction: column; 
+        padding-top: 15%;
+        padding-bottom: 15%;
+        align-items: center;
+    }
+    .drinkmenu .drink-cafe .title{
+        font-size: 3rem;
+        margin-left: 0;
+    }
+    .drinkmenu .drink-cafe .flesh, .espresso, .other{
+        width: 80%;
+    }
+    .drinkmenu .drink-cafe .flesh{
+        margin-left: 0;
+        margin-bottom: 150px;
+    }
+    .drinkmenu .drink-cafe .espresso{
+        margin: 0;
+        margin-right: 0;
+        margin-bottom: 150px;
+    }
+    .drinkmenu .drink-cafe .other{
+        margin-left: 0;
+    }
+    .drinkmenu .drink-cafe .menubox{
+        margin-bottom: 0;
+    }
+    footer {
+        margin-top: 0;
+        padding-top: 10%;
+        flex-direction: column-reverse;
+    }
+    footer .textbox{
+        display: flex;
+        flex-direction: column;
+        align-items: center;
+        margin-bottom: 200px;
+    }
+    footer .textbox .shopname{
+        text-align: center;
+        margin-bottom: 25px;
+    }
+    footer .textbox .businesshours{
+        margin-bottom: 100px;
+    }
+    footer .fishlogo{
+        width: 100px;
+    }
+}
+@media screen and (max-width: 560px) {
+
+    header .fishlogo{
+        width: 60px
+    }
+    header a {
+        font-size: 1.3rem;
+    }
+    header .lineicon{
+        display: none;
+    }
+    header a{
+        margin-left:0;
+    }
+    header .topbutton, .menubutton, .aboutbutton{
+        margin-left: 12vw;
+    }
+    /*---------------------------------------------------------------food_start-----*/
+    .foodmenu .food-title{
+    margin-top: 85.32px;
+    }
+    .foodmenu .food-title .text{
+        font-size: 2.1rem;
+    }
+    .foodmenu .food-top{
+        padding-top: 20%;
+        padding-bottom: 20%;
+    }
+    .foodmenu .food-top .title_barbecue{
+        font-size: 2rem;
+    }
+    .foodmenu .food-top .text .menu{
+        font-size: 1.3rem;
+    }
+    .foodmenu .food-top .text .price{
+        font-size: 1.3rem;
+    }
+    .foodmenu .food-top .text{
+        width: 94%;
+    }
+    .foodmenu .food-middle {
+        padding-top: 20%;
+        padding-bottom: 20%;
+    }
+    .foodmenu .food-middle .tapas .title{
+        font-size: 2rem; 
+    }
+    .foodmenu .food-middle .tapas .menubox .menu{
+        font-size: 1.3rem;
+    }
+    .foodmenu .food-middle .tapas .menubox .price{
+        font-size: 1.3rem;
+    }
+    .foodmenu .food-middle{
+        align-items: center;
+        display: flex;
+        flex-direction: column;
+    }
+    .foodmenu .food-middle .tapas{
+        width: 94%;
+        margin: 0;
+        margin-right: 0;
+    }
+    .foodmenu .food-bottom .alacarte{
+        padding-top: 20%;
+        padding-bottom: 20%;
+    }
+    .foodmenu .food-bottom .alacarte .menubox{
+        width: 94%;
+    }
+    .foodmenu .food-bottom .alacarte .title{
+        font-size: 2rem;
+    }
+    .foodmenu .food-bottom .alacarte .menubox .menu{
+        font-size: 1.3rem;
+    }
+    .foodmenu .food-bottom .alacarte .menubox .price{
+        font-size: 1.3rem;
+    }
+    /*---------------------------------------------------------------food_end-----*/
+    /*---------------------------------------------------------------drink_start-----*/
+    .drinkmenu .drink-title .text{
+        font-size: 2.1rem;
+    }
+    .drinkmenu .drink-top{
+        padding-top: 20%;
+        padding-bottom: 20%;   
+    }
+    .drinkmenu .drink-top .title{
+        font-size: 2rem;
+    }
+    .drinkmenu .drink-top .subtitle{
+        font-size: 1.6rem;
+    }
+    .drinkmenu .drink-top .menu{
+        font-size: 1.3rem;
+    }
+    .drinkmenu .drink-top .price{
+        font-size: 1.3rem;
+    }
+    .drinkmenu .drink-top .okayama{
+        width: 94%;
+    }
+    .drinkmenu .drink-top .japanese{
+        width: 94%;
+    }
+    .drinkmenu .drink-top .world{
+        width: 94%;
+    }
+    .drinkmenu .drink-middle{
+    padding-top: 20%;
+    padding-bottom: 20%;
+    }
+    .drinkmenu .drink-middle .title{
+        font-size: 2rem;
+    }
+    .drinkmenu .drink-middle .menu{
+        font-size: 1.3rem;
+    }
+    .drinkmenu .drink-middle .price{
+        font-size: 1.3rem;
+    }
+    .drinkmenu .drink-middle .flesh{
+        width: 94%;
+    }
+    .drinkmenu .drink-middle .standard{
+        width: 94%;
+    }
+    .drinkmenu .drink-middle .whisky{
+        width: 94%;
+    }
+    .drinkmenu .drink-bottom{
+        padding-top: 20%;
+        padding-bottom: 20%;
+    }
+    .drinkmenu .drink-bottom .title{
+        font-size: 2rem;
+    }
+    .drinkmenu .drink-bottom .subtitle{
+        font-size: 1.6rem;
+    }
+    .drinkmenu .drink-bottom .menu{
+        font-size: 1.3rem;
+    }
+    .drinkmenu .drink-bottom .price{
+        font-size: 1.3rem;
+    }
+    .drinkmenu .drink-bottom .standard{
+        width: 94%;
+    }
+    .drinkmenu .drink-bottom .gin{
+        width: 94%;
+    }
+    .drinkmenu .drink-bottom .tequila{
+        width: 94%;
+    }
+    .drinkmenu .drink-bottom .vodka{
+        width: 94%;
+    }
+    .drinkmenu .drink-bottom .other{
+        width: 94%;
+    }
+    .drinkmenu .drink-cafe{
+        background-image: url(images/cafe-back-sp.png);
+        padding-top: 30%;
+        padding-bottom: 20%;
+    }
+    .drinkmenu .drink-cafe .title{
+        font-size: 2rem;
+    }
+    .drinkmenu .drink-cafe .subtitle{
+        font-size: 1.6rem;
+    }
+    .drinkmenu .drink-cafe .flesh, .espresso, .other{
+        width: 94%;
+    }
+    .drinkmenu .drink-cafe .menu{
+        font-size: 1.3rem;
+    }
+    .drinkmenu .drink-cafe .price{
+        font-size: 1.3rem;
+    }
+    /*---------------------------------------------------------------drink_end-----*/
+    footer{
+        padding-top: 30%;
+        padding-bottom: 20px;
+    }
+    footer .textbox .shopname{
+        font-size: 1.7rem;
+    }
+    footer .textbox .shopname span{
+        font-size: 3.5rem;
+    }
+    footer .textbox .businesshours{
+        font-size: 1.1rem;
+        margin-bottom: 70px;
+    }
+    footer .textbox .line-text{
+        font-size: 1.3rem;
+    }
+    footer .textbox .linebotton{
+        width: 172px;
+        height: 47px;
+        border: 0.7px solid #000;
+    }
+    footer .textbox .lineicon{
+        width: 17px;
+        height: 17px;
+    }
+    footer .textbox .line{
+        font-size: 1.3rem
+    }
+    footer .fishlogo{
+        width: 75px;
+    }
+}
+@media screen and (max-width: 375px) {
+    .foodmenu .food-top .text .menu{
+        font-size: 1.2rem;
+    }
+    .foodmenu .food-top .text .price{
+        font-size: 1.2rem;
+    }
+}
